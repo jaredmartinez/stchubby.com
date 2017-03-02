@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <nav-bar></nav-bar>
+
+  <main class="bg-gray" style="padding-top: 60px;" [style.min-height.px]="innerHeight">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer-bar></footer-bar>
+</div>

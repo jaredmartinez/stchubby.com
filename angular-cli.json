@@ -17,11 +17,21 @@
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "",
       "styles": [
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/bootstrap/dist/css/bootstrap-theme.css",
+        "../node_modules/animate.css/animate.css",
+        "../src/assets/css/style.css",
+        "../src/assets/css/custom.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/wowjs/dist/wow.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -58,7 +68,7 @@
     },
     "spec": {
       "class": false,
-      "component": true,
+      "component": false,
       "directive": true,
       "module": false,
       "pipe": true,

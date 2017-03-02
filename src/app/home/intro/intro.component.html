@@ -1,6 +1,7 @@
 <!-- Section: intro -->
 <section>
   <div id="intro" class="container-fluid intro" style="background: url(../../assets/img/bg3.jpg) no-repeat top center;">
+
     <div class="row">
       <div class="col-md-12">
         <div class="logo">
@@ -19,15 +20,11 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="wow bounceInDown" data-wow-delay="0.2s">
-        <div class="text-center">
-          <button type="button" class="btn btn-skin">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;
-          <button type="button" class="btn btn-skin">Sponsor</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <button-container>
+      <button type="button" class="btn btn-skin" routerLink="/register" routerLinkActive="active">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" class="btn btn-skin" routerLink="/sponsor" routerLinkActive="active">Sponsor</button>
+    </button-container>
 
+  </div>
 </section>
 <!-- /Section: intro -->

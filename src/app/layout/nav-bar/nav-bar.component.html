@@ -6,8 +6,8 @@
       </button>
       <a class="navbar-brand">
         <h1>
-          <span class="hidden-s hidden-xs">St. Chubby Golf Classic<br/></span>
-          <span class="hidden-lg hidden-m">St. Chubby Golf</span>
+          <span class="hidden-sm hidden-xs" routerLink="/home" routerLinkActive="active">St. Chubby Golf Classic<br/></span>
+          <span class="hidden-lg hidden-md" routerLink="/home" routerLinkActive="active">St. Chubby Golf</span>
         </h1>
       </a>
     </div>
@@ -15,11 +15,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <li><a ng-link="['register']">Register</a></li>
-        <li><a ng-link="['sponsor']">Sponsor</a></li>
-        <li><a ng-link="['tournament-info']">Tournament Info</a></li>
-        <li><a ng-link="['gallery']">Gallery</a></li>
-        <li><a ng-link="['contact']">Contact</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+        <li><a routerLink="/sponsor" routerLinkActive="active">Sponsor</a></li>
+        <li><a routerLink="/location" routerLinkActive="active">Location</a></li>
+        <!--<li><a routerLink="/gallery" routerLinkActive="active">Gallery</a></li>-->
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
