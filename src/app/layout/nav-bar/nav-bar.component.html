@@ -1,0 +1,28 @@
+<nav class="navbar navbar-fixed-top navbar-custom" [ngClass]="{'top-nav-collapse': isPageScrolledDown()}" role="navigation">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand">
+        <h1>
+          <span class="hidden-s hidden-xs">St. Chubby Golf Classic<br/></span>
+          <span class="hidden-lg hidden-m">St. Chubby Golf</span>
+        </h1>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <li><a ng-link="['register']">Register</a></li>
+        <li><a ng-link="['sponsor']">Sponsor</a></li>
+        <li><a ng-link="['tournament-info']">Tournament Info</a></li>
+        <li><a ng-link="['gallery']">Gallery</a></li>
+        <li><a ng-link="['contact']">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
