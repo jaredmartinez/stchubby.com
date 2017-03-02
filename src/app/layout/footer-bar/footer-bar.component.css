@@ -3,3 +3,7 @@ footer {
   background-color: #C12E2E;
   text-align: center;
 }
+
+footer p {
+  color: #f8f8f8;
+}

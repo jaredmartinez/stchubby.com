@@ -28,7 +28,6 @@ export class AppComponent extends BasePageComponent implements OnInit {
 
   @HostListener('window:resize')
   getWindowSize() {
-    console.log("window");
     this.innerHeight = window.innerHeight - 265;
     this.innerWidth = window.innerWidth;
   }

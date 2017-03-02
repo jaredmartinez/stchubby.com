@@ -1,0 +1,16 @@
+.app-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+/* Phones */
+@media (max-width : 768px) {
+  main {
+    padding-top: 50px;
+  }
+}

@@ -18,7 +18,6 @@ export class CountdownComponent implements OnInit {
     let countDownDate = new Date("Apr 22, 2017 08:00:00").getTime();
 
     setInterval(() => {
-      console.log("counting");
       // Get todays date and time
       let now = new Date().getTime();
 

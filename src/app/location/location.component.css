@@ -1,3 +1,7 @@
 .sebm-google-map-container {
   height: 500px;
 }
+
+.service-desc {
+  text-align: center;
+}
