@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+section {
+  padding: 40px 0;
+}
+
+@media (max-width : 768px) {
+  section {
+    padding: 20px 0;
+  }
+}

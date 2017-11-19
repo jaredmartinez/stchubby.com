@@ -1,0 +1,66 @@
+.countdown-timer {
+  /*background: -webkit-linear-gradient(left,#184fd0 50%,#618bed 50%);*/
+  /*background: linear-gradient(to right,#184fd0 50%,#618bed 50%);*/
+  background-color: #C12E2E;
+  color: #fff;
+  font-family: Poppins,sans-serif;
+  font-weight: bold;
+}
+
+.countdown-field span {
+  font-size: 48px;
+}
+
+.countdown-field div {
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .countdown-timer {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .countdown-timer-fields {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .countdown-field {
+    height: 100px;
+    padding: 30px 0;
+    width: 25%;
+    float: left;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .countdown-timer {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .countdown-timer-fields {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .countdown-field {
+    height: 80px;
+    padding: 20px 0;
+    width: 25%;
+    float: left;
+  }
+
+  .countdown-field span {
+    font-size: 36px;
+  }
+
+}
