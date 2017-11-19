@@ -21,7 +21,7 @@ export class AppComponent extends BasePageComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      document.body.scrollTop = 0;
+      window.scrollTo(0, 0);
     });
     this.getWindowSize();
   }
@@ -31,4 +31,5 @@ export class AppComponent extends BasePageComponent implements OnInit {
     this.innerHeight = window.innerHeight - 265;
     this.innerWidth = window.innerWidth;
   }
+
 }
