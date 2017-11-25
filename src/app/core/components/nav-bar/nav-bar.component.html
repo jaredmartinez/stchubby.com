@@ -1,26 +1,26 @@
 <nav class="navbar navbar-fixed-top navbar-custom" [ngClass]="{'top-nav-collapse': isPageScrolledDown()}" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+      <button type="button" class="navbar-toggle" (click)="toggleNav()">
         <i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand">
         <h1>
-          <span class="hidden-sm hidden-xs" routerLink="/home" routerLinkActive="active">St. Chubby Golf Classic<br/></span>
-          <span class="hidden-lg hidden-md" routerLink="/home" routerLinkActive="active">St. Chubby Golf</span>
+          <span class="hidden-sm hidden-xs" routerLink="">St. Chubby Golf Classic<br/></span>
+          <span class="hidden-lg hidden-md" routerLink="">St. Chubby Golf</span>
         </h1>
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse" [ngClass]="{'collapse': collapse}">
       <ul class="nav navbar-nav">
-        <li><a routerLink="" routerLinkActive="active">Home</a></li>
-        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-        <li><a routerLink="/sponsor" routerLinkActive="active">Sponsor</a></li>
-        <li><a routerLink="/tournament" routerLinkActive="active">Tournament</a></li>
+        <li><a routerLink="" routerLinkActive="active" (click)="toggleNav()">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="toggleNav()">About</a></li>
+        <li><a routerLink="/sponsor" routerLinkActive="active" (click)="toggleNav()">Sponsor</a></li>
+        <li><a routerLink="/tournament" routerLinkActive="active" (click)="toggleNav()">Tournament</a></li>
         <!--<li><a routerLink="/gallery" routerLinkActive="active">Gallery</a></li>-->
-        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="toggleNav()">Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->

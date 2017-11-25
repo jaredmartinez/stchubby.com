@@ -8,6 +8,8 @@ import {DOCUMENT} from "@angular/platform-browser";
 })
 export class NavBarComponent implements OnInit {
 
+  collapse = true;
+
   constructor(private _el: ElementRef, @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit() {
@@ -20,6 +22,10 @@ export class NavBarComponent implements OnInit {
       return true
     }
     return false;
+  }
+
+  toggleNav() {
+    this.collapse = !this.collapse;
   }
 
 }
