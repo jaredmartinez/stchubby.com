@@ -1,4 +1,4 @@
-# Stchubby
+# www.stchubby.com website code
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
