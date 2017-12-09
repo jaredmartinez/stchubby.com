@@ -1,15 +1,15 @@
+env:
+  global:
+  - secure: dnyaSo6ARywfntkSQRQMkAQZs2iDZBzDwxCAiUfYdjXmMKHGRqzyyxudfu2kSeJrgFej8vh8YRQFNH7l9krfE4RMki6tpWYHNeZJxEMhwO98OCaINE34SA3wK2cSA2+X/XT5DTuxniVbzyR/s85gbFodMQeVuJDo3hDmn/3KkPrV1d8f3PZvucW9XDJYiNbzHhjwl2Wd9heIRmuLzW4gKFtW/NBFFiy24aHjvj0I+A8uVSlCdvdSpnPXhPo/z0QPn1po1nEnUinBOc3g2i9LIUc8/RpCxLy3orhRL0C7H8YxZvDY9RIRm74gabi8YQyzb1SPILjAxvFKPe2gkLZlJA9B20KPUGfEdWUgcLWq9YegM3Ro32t8LWO37PkmfaULCa0pjC2bmYAhnzWH/hfFDkvBIUjKg0K/h519+E9v/2ZUCmAdWI9Il8ZTzfTsOe92VkHlSweTGoTiZu8Iy4pRCXT4O03XsnQGk2EE3XrP0Pz0tbBVHZqbTCFA3NZUFiTOUXGFyNGyOOEC1E2GPRrSGy1azV7eUvbTN3Fd8JkfPiwoNvh+iaZvqlbWQccW1EXz+FkMGq3oeoEKImOjroDtpRJphN47I+nCuCyU++kfAEXAUre0S9nN8eFituYxx3DnN8ks0d2VcmLcKfkPheLROlAl/V/VyxZhjcNrn3lNovA=
+  - secure: Vyx1GviKcb04jfoTmDn4bv3rtI9CVRnp00O7dcR+WTR79RTRJOaA+KZKnIEUnUH+koXsscSIBS5GzeXLpbpI2wsSwX61mNQN/MqbHRQ+ODNWoEpqBdHZDGSCRpEwfrO0oVUcf92EY6chO7nwGOV9yXVO9fzm/YyA+IGvVJr0ugEMzMK8jeMxaUYI37w8eZCVdVCWUaRlfBNua9HQhcidDiPudrdWHf49OKFK+BrWdS3rAqn9yHj2oqCBF83semZI9x3ZY+C7OOn+aSNB01vyuzsewcgrp6m0d2PMV+lx/dZRFkshcpufSpWZAPZVz1o3Kh3qxL46IwI2xeGKbDy73e8puuknCHQqnebUZbQ3F+sHrdQo6TjKatDAwfEkaO8fl+xqopEJm4iY8jsVHJbdxWiTSlFrHsFK0tVAuXqm4mDsaE1rUcYEyHfNg1y4fzTOZPKSveDe6u2kNAoW56nqEgMlvr7XIV9npSciHklgRXXWBKe/ev9x1WYFMUpPKHAR/QfpHvja5aV/OY+PVTDVdDW5V/wSOMJX0yWKFFXu/ItGuATTwokYwR5wA/snC9KlzZZGvw09NukONpnve4O86tie+7hN3ene1pU9wlhmXdy8gdpuBKRnItrDF7kxYRZlYZls4q5eWdzUAsQh7grWMEeGgNxIhyq8RCe3aKsQ2nc=
 language: node_js
 node_js:
-   - "7"
-
+- '7'
 branches:
-   only:
-      - master
-
+  only:
+  - master
 before_script:
-   - npm install -g @angular/cli
-
+- npm install -g @angular/cli
 script:
-   - ng build --prod --aot --build-optimizer
-
-after_success:
+- ng build --prod --aot --build-optimizer
+after_success: curl -T /dist -u $FTP_USER:$FTP_PASSWORD ftp.jmarsolutions.com
