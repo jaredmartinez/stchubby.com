@@ -1,4 +1,15 @@
 language: node_js
 node_js:
-  - "iojs"
-  - "7"
+   - "7"
+
+branches:
+   only:
+      - master
+
+before_script:
+   - npm install -g @angular/cli
+
+script:
+   - ng build --prod --aot --build-optimizer
+
+after_success:
