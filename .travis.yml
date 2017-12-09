@@ -12,4 +12,6 @@ before_script:
 - npm install -g @angular/cli
 script:
 - ng build --prod --aot --build-optimizer
-after_success: curl -T ./dist/*.* -u $FTP_USER:$FTP_PASSWORD ftp.jmarsolutions.com
+after_success:
+- ls
+- curl -T ./dist/*.* -u $FTP_USER:$FTP_PASSWORD ftp.jmarsolutions.com
