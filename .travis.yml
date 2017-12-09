@@ -13,4 +13,4 @@ before_script:
 script:
 - ng build --prod --aot --build-optimizer
 after_success:
-curl -T ./dist/*.* -u $FTP_USER:$FTP_PASSWORD ftp://gator2008.hostgator.com.com
+"curl -T ./dist/*.* -u $FTP_USER:$FTP_PASSWORD ftp://gator2008.hostgator.com"
