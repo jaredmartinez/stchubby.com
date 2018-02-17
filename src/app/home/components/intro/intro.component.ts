@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'intro',
@@ -6,12 +6,11 @@ import {Component, OnInit, Input} from '@angular/core';
   styleUrls: ['intro.component.css']
 })
 export class IntroComponent implements OnInit {
-
   @Input() tournamentDate: Date;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    const test = '';
   }
-
 }
