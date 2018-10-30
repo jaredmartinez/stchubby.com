@@ -24,7 +24,6 @@
 
 .intro .slogan h2 {
   color: #FFF;
-  text-shadow: none;
   font-size: 60px;
   line-height: 25px;
   font-weight: 700;
@@ -32,9 +31,7 @@
   background-color: rgba(0, 0, 0, 0);
   text-decoration: none;
   text-transform: uppercase;
-  border-width: 0px;
-  border-color: #000;
-  border-style: none;
+  border: 0px none #000;
   text-shadow: -1px 0 1px #000;
 }
 

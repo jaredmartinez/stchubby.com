@@ -8,6 +8,14 @@ import {DOCUMENT} from "@angular/platform-browser";
 })
 export class NavBarComponent implements OnInit {
 
+  links = [
+    { text: 'Home', url: '' },
+    { text: 'About', url: '/about' },
+    { text: 'Sponsor', url: '/sponsor' },
+    { text: 'Tournament', url: '/tournament' },
+    { text: 'Contact', url: '/contact' },
+  ];
+
   constructor(private _el: ElementRef, @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit() {

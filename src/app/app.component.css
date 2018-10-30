@@ -4,8 +4,9 @@
 }
 
 main {
-  padding-top: 90px;
-  padding-bottom: 30px;
+  min-height: 100vh;
+  padding-top: 81px;
+  padding-bottom: 50px;
 }
 
 /* Phones */

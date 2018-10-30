@@ -1,7 +1,6 @@
 .navbar {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255,255,255,.3);
-
 }
 
 .navbar-brand {
@@ -25,7 +24,7 @@
 }
 
 .nav.navbar-nav {
-  background-color: rgba(255,255,255,.4);
+  // background-color: rgba(255,255,255,.4);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -83,10 +82,6 @@
   outline: 0;
   background-color: rgba(255,255,255,.2);
 }
-.navbar-custom .nav li a:hover {
-  outline: 0;
-  background-color: rgba(255,255,255,.2);
-}
 
 .navbar-toggle {
   padding: 4px 6px;
@@ -97,4 +92,9 @@
 .navbar-toggle:focus,
 .navbar-toggle:active {
   outline: 0;
+}
+
+.navbar-custom, .navbar-custom ul.nav li a {
+  background-color: #C12E2E;
+  color: white;
 }

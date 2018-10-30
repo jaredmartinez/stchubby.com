@@ -8,22 +8,21 @@
           <img src="../../assets/img/logo.png" />
         </div>
       </div>
+    </div>
+
+    <div class="row justify-content-center">
       <div class="col-md-12">
-        <div class="slogan med hidden-s hidden-xs">
-          <h2><span class="color-red">St. Chubby Golf Classic</span> <!-- <span class="text_color">SQUAD</span> --> </h2>
+        <div class="slogan med text-center">
+          <h2><span class="color-red">St. Chubby Golf Classic</span></h2>
           <h3><span class="color-red">{{ tournamentDate | date:'fullDate' }} - Plum Creek Golf Course</span></h3>
-        </div>
-        <div class="slogan small hidden-m hidden-lg">
-          <h2><span class="color-red">St. Chubby Golf Classic</span> <!-- <span class="text_color">SQUAD</span> --> </h2>
-          <h3><span class="color-red">{{ tournamentDate | date:'fullDate' }}<br/>Plum Creek Golf Course</span></h3>
         </div>
       </div>
     </div>
 
     <button-container>
-      <div class="col-xs-12 marginbot-10 text-center">
-        <button type="button" class="btn btn-skin" style="margin: 10px;" routerLink="/tournament" routerLinkActive="active">Register</button>
-        <button type="button" class="btn btn-skin" style="margin: 10px;" routerLink="/sponsor" routerLinkActive="active">Sponsor</button>
+      <div class="col marginbot-10 justify-content-center">
+        <button type="button" class="btn btn-skin waves-light mx-2"routerLink="/tournament" routerLinkActive="active">Register</button>
+        <button type="button" class="btn btn-skin mx-2" routerLink="/sponsor" routerLinkActive="active">Sponsor</button>
       </div>
     </button-container>
 
