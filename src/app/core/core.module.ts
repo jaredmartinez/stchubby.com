@@ -5,13 +5,15 @@ import {FooterBarComponent} from "./components/footer-bar/footer-bar.component";
 import {HttpModule} from "@angular/http";
 import {BrowserModule} from "@angular/platform-browser";
 import {RouterModule} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
     CommonModule,
     HttpModule,
     BrowserModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   declarations: [
     NavBarComponent,
