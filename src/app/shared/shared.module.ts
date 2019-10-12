@@ -5,11 +5,13 @@ import {SubHeaderComponent} from "./sub-header/sub-header.component";
 import {BasePageComponent} from "./base-page/base-page.component";
 import {SectionHeaderComponent} from "./section-header/section-header.component";
 import {RouterModule} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   declarations: [
     SectionHeaderComponent,
@@ -19,6 +21,7 @@ import {RouterModule} from "@angular/router";
   ],
   exports: [
     RouterModule,
+    FormsModule,
     SectionHeaderComponent,
     BasePageComponent,
     SubHeaderComponent,
