@@ -8,24 +8,24 @@
       <div class="col-lg-8 col-md-6 col-md-offset-1">
         <div class="boxed-grey">
 
-          <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+          <form #contactForm="ngForm" (ngSubmit)="submitForm()" id="contact-form" name="contact-form" netlify="true" netlify-recaptcha="true" netlify-honeypot="bot">
             <div class="row">
               <div class="col-md-6">
 
                 <div class="form-group hidden">
-                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  <label>Don’t fill this out if you're human: <input name="bot" [(ngModel)]="contact.bot" /></label>
                 </div>
 
                 <div class="form-group">
                   <label for="name">
                     Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Name" required="required" />
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required" [(ngModel)]="contact.name" />
                 </div>
 
                 <div class="form-group">
                   <label for="phone">
                     Last Name</label>
-                  <input type="phone" class="form-control" id="phone" placeholder="Phone" required="required" />
+                  <input type="phone" class="form-control" id="phone" name="phone" placeholder="Phone" required="required" [(ngModel)]="contact.phone"/>
                 </div>
 
                 <div class="form-group">
@@ -34,13 +34,13 @@
                   <div class="input-group">
                     <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                     </span>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required="required" /></div>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required" [(ngModel)]="contact.email"/></div>
                 </div>
 
                 <div class="form-group">
                   <label for="subject">
                     Subject</label>
-                  <select id="subject" name="subject" class="form-control" required="required">
+                  <select id="subject" name="subject" class="form-control" required="required" [(ngModel)]="contact.subject">
                     <option value="na" selected="">Choose One:</option>
                     <option value="sponsor">Sponsorship</option>
                     <option value="registration">Registration</option>
@@ -58,7 +58,7 @@
                   <label for="message">
                     Message</label>
                   <textarea name="message" id="message" class="form-control" rows="11" cols="25" required="required"
-                            placeholder="Message"></textarea>
+                            placeholder="Message" ngModel></textarea>
                 </div>
 
               </div>
