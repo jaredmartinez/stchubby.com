@@ -27,7 +27,7 @@ export class ContactComponent extends BasePageComponent implements OnInit {
 
   submitForm() {
     const body = new HttpParams()
-      .set('form-name', 'contact-form')
+      .set('form-name', 'contact')
       .append('name', this.contact.name)
       .append('email', this.contact.email)
       .append('phone', this.contact.phone)
@@ -36,7 +36,7 @@ export class ContactComponent extends BasePageComponent implements OnInit {
 
     let headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post('contact/', body.toString(), {headers: headers})
+    this.http.post('', body.toString(), {headers: headers})
       .subscribe(
       res => {
         console.log('success');
