@@ -10,12 +10,13 @@ import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
 export class ContactComponent extends BasePageComponent implements OnInit {
 
   contact = {
-    bot: '',
-    name: '',
-    phone: null,
-    email: '',
-    subject: '',
-    message: ''
+    'form-name': 'contact',
+    'bot': '',
+    'name': '',
+    'phone': null,
+    'email': '',
+    'subject': '',
+    'message': ''
   };
 
   constructor(private http: HttpClient) {
@@ -37,7 +38,7 @@ export class ContactComponent extends BasePageComponent implements OnInit {
 
     let headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post('/', body.toString(), {headers: headers})
+    this.http.post('/contact', this.contact, {headers: headers})
       .subscribe(
       res => {
         console.log('success');
