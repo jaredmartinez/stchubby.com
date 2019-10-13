@@ -34,9 +34,9 @@ export class ContactComponent extends BasePageComponent implements OnInit {
       .append('subject', this.contact.subject)
       .append('message', this.contact.message);
 
-    let headers = new HttpHeaders().set('Content-Type', 'multipart/form-data');
+    let headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
 
-    this.http.post('/contact-form/', body.toString(), {headers: headers})
+    this.http.post('/contact-form', body.toString(), {headers: headers})
       .subscribe(
       res => {
         console.log('success');
