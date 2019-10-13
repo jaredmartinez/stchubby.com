@@ -41,7 +41,7 @@
                   <label for="subject">
                     Subject</label>
                   <select id="subject" name="subject" class="form-control" required="required" [(ngModel)]="contact.subject">
-                    <option value="na" selected="">Choose One:</option>
+                    <option value="" selected="">Choose One:</option>
                     <option value="sponsor">Sponsorship</option>
                     <option value="registration">Registration</option>
                     <option value="general">General</option>
@@ -63,6 +63,7 @@
 
               </div>
               <div class="col-md-12">
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">Send Message</button>
               </div>
             </div>

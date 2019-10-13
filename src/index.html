@@ -10,7 +10,8 @@
 <body>
   <app-root>Loading...</app-root>
   // index.html
-  <form name=”contact-form” netlify hidden>
+  <form name=”contact-form” method="POST" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
     <input type=”text” name=”name” />
     <input type=”email” name=”email” />
     <input type=”phone” name=”phone” />
