@@ -28,6 +28,7 @@ export class ContactComponent extends BasePageComponent implements OnInit {
   submitForm() {
     const body = new HttpParams()
       .set('form-name', 'contact')
+      .append('bot-field', this.contact.bot)
       .append('name', this.contact.name)
       .append('email', this.contact.email)
       .append('phone', this.contact.phone)
