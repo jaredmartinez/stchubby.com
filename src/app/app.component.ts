@@ -2,6 +2,8 @@ import {Component, OnInit, HostListener} from "@angular/core";
 import {NavigationEnd, Router} from "@angular/router";
 import {BasePageComponent} from "./shared/base-page/base-page.component";
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +16,11 @@ export class AppComponent extends BasePageComponent implements OnInit {
 
   constructor(private router: Router) {
     super();
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        gtag('config', 'UA-159982987-1', {'page_path': event.urlAfterRedirects});
+      }
+    })
   }
 
   ngOnInit() {
