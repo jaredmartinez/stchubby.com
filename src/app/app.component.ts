@@ -18,7 +18,7 @@ export class AppComponent extends BasePageComponent implements OnInit {
     super();
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        gtag('config', 'UA-159982987-1', {'page_path': event.urlAfterRedirects});
+        gtag('config', 'UA-159982987-1', {'page_location': event.url});
       }
     })
   }
