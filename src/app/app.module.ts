@@ -1,11 +1,11 @@
-import {NgModule} from "@angular/core";
-import {FormsModule} from "@angular/forms";
-import {AppComponent} from "./app.component";
-import {AppRoutingModule} from "./app.routing.module";
-import {AgmCoreModule} from "angular2-google-maps/core";
-import {CoreModule} from "./core/core.module";
-import {HomeModule} from "./home/home.module";
-import {SharedModule} from "./shared/shared.module";
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {AppComponent} from './app.component';
+import {AppRoutingModule} from './app.routing.module';
+import {CoreModule} from './core/core.module';
+import {HomeModule} from './home/home.module';
+import {SharedModule} from './shared/shared.module';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [

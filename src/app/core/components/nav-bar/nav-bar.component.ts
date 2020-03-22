@@ -1,5 +1,5 @@
 import {Component, OnInit, HostListener, ElementRef, Inject} from '@angular/core';
-import {DOCUMENT} from "@angular/platform-browser";
+import { DOCUMENT } from "@angular/common";
 
 @Component({
   selector: 'nav-bar',
