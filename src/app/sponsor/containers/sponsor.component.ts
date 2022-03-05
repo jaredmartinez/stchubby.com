@@ -17,7 +17,7 @@ export class SponsorComponent implements OnInit {
   sponsorDate: Date = AppConstants.DUE_DATE;
 
   sponsorDetails = [
-    {title: 'Bronze', price: '$100', sign: '24” x 15” Sign', detail: 'Sign placed on various course tee boxes', details [
+    {title: 'Bronze', price: '$100', sign: '24” x 15” Sign', detail: 'Sign placed on various course tee boxes', details: [
      '24” x 15” Sign',
      'Sign placed on various course tee boxes'
      ]},
