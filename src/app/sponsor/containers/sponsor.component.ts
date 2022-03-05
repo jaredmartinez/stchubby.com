@@ -21,7 +21,7 @@ export class SponsorComponent implements OnInit {
      '24” x 15” Sign placed on various course tee boxes'
      ]},
     {title: 'Silver', price: '$250', sign: '24” x 30” Sign', detail: 'Sign placed at various premium golf course locations', details: [
-    '24” x 30” Sign placed at various premium golf course locations'
+    '24” x 30” Sign placed at various course tee boxes'
     ]},
     {title: 'Gold', price: '$350', sign: '2’ x 6’ Banner', detail: 'Banner placed at various premium locations', details: [
     '2’ x 6’ Banner placed at various premium areas'
