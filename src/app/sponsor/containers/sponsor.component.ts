@@ -35,15 +35,18 @@ export class SponsorComponent implements OnInit {
     ]},
     {title: 'Ruby', price: '$1,000', sign: '4’ x 8’ Banner', detail: 'Banner placed at entrance', details: [
     '4’ x 8’ Banner',
-    'Placed at various premium areas'
+    'Lunch Table Sign'
     ]},
     {title: 'Diamond', price: '$2,000', sign: '4’ x 8’ Banner', detail: 'Banner placed at entrance', details: [
     '4’ x 8’ Banner',
+    'Scorecard listing',
     'Lunch Table Sign'
     ]},
     {title: 'Hope Diamond', price: '$5,000', sign: '4’ x 8’ Banner', detail: 'Banner placed at dinner location', details: [
     '4’ x 8’ Banner',
-    'Sign placed at various premium golf course locations'
+    'Team of 4 registration included',
+    'Scorecard listing',
+    'Lunch Table Sign'
     ]},
   ]
 
