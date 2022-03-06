@@ -18,11 +18,11 @@
 }
 
 .color-red {
-  color: #C12E2E;
+  color: #FF1616;
 }
 
 .redText{
-  color: #C12E2E;
+  color: #FF1616;
 }
 
 footer {
@@ -50,7 +50,7 @@ footer {
 
 .btn-circle-color {
   border: 2px solid #000;
-  color: #C12E2E;
+  color: #FF1616;
 }
 
 .med h2 .color-red {
@@ -70,7 +70,7 @@ footer {
 
 .small h3 .color-red {
   font-size: 18px;
-  text-shadow: -1px 1px 1px #C12E2E;
+  text-shadow: -1px 1px 1px #FF1616;
 }
 
 .navbar-brand .med {
@@ -84,7 +84,7 @@ footer {
 }
 
 .navbar-custom, .navbar-custom ul.nav li a {
-  background-color: #C12E2E;
+  background-color: #FF1616;
   color: white;
 }
 
