@@ -22,8 +22,8 @@
 
     <button-container>
       <div class="col-xs-12 marginbot-10 text-center">
-        <button type="button" class="btn btn-skin" style="margin: 10px;" (click)="openUrl('https://st-chubby-memorial.square.site/registration')">Golf Details</button>
-        <button type="button" class="btn btn-skin" style="margin: 10px;" (click)="openUrl('https://st-chubby-memorial.square.site/sponsor')">Sponsor</button>
+        <button type="button" class="btn btn-skin" style="margin: 10px;" (click)="openUrl.emit('https://st-chubby-memorial.square.site/registration')">Golf Details</button>
+        <button type="button" class="btn btn-skin" style="margin: 10px;" (click)="openUrl.emit('https://st-chubby-memorial.square.site/sponsor')">Sponsor</button>
       </div>
     </button-container>
 
