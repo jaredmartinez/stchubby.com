@@ -1,6 +1,6 @@
 <div class="home">
 
-  <intro [tournamentDate]="tournamentDate"></intro>
+  <intro [tournamentDate]="tournamentDate" (openUrl)="goToLink($event)"></intro>
 
 <!--   <section class="bg-white">
     <div class="container">
@@ -23,7 +23,6 @@
                 We apologize for any inconvenience this may cause and appreciate your patience as we navigate these unexpected circumstances.<br/><br/>
 
                 We thank you for your continued support of St. Chubby during these unprecedented times. We wish you and your families good health.<br/><br/>
-                ﻿
                 All the best,<br/>
                 Bill May & the St. Chubby Board of Directors
               </p>
@@ -40,6 +39,6 @@
 <!--   <news></news> -->
   <home-location [tournamentDate]="tournamentDate"></home-location>
   <countdown [tournamentDate]="tournamentDate"></countdown>
-  <home-sponsors></home-sponsors>
+  <home-sponsors (openUrl)="goToLink($event)"></home-sponsors>
 
 </div>
