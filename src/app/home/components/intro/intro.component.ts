@@ -8,6 +8,9 @@ import {Component, OnInit, Input} from '@angular/core';
 export class IntroComponent implements OnInit {
 
   @Input() tournamentDate: Date;
+   
+  @Output() openUrl = new EventEmitter<string>();
+
 
   constructor() { }
 
