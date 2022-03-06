@@ -27,5 +27,9 @@ export class NavBarComponent implements OnInit {
   toggleNav() {
     this.collapse = !this.collapse;
   }
+  
+  goToLink(url: string){
+    window.open(url, "_blank");
+  }
 
 }
