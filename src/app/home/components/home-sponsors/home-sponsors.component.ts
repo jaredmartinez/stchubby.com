@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['home-sponsors.component.css']
 })
 export class HomeSponsorsComponent implements OnInit {
+  
+  @Output() openUrl = new EventEmitter<string>();
 
   constructor() { }
 
